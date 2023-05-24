@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.bg-custom {
+  background: url(./assets/background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-custom-connect-wallet {
+  background: url(./assets/Background-Connect\ Wallet.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Heartstone:checked ~ .checkmark {
+  background-color: #18c38d;
+  border: 1px solid transparent;
+}
+#aptosNft:checked ~ .aptosNft {
+  background-color: #0f9ff0;
+  border: 1px solid transparent;
+}
+.checkmark:after,
+.aptosNft:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#Heartstone:checked ~ .checkmark:after,
+#aptosNft:checked ~ .checkmark:after {
+  display: block;
+}
+.checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.aptosNft:after {
+  left: 9px;
+  top: 3px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
